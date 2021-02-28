@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css">
+    <title>FreeCodeCamp Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+         <em>Thank you for taking the time to help us improve the platform</em> 
+      </p>
+    </header>
+    <section>
+      <form action="get" id="survey-form">
+        <!-- Name Field -->
+        <div>
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your Name" required
+          />
+        </div>
+        <!-- Email Field -->
+        <div>
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your Email" required
+          />
+        </div>
+        <!--  Age Number Input -->
+        <div>
+          <label for="number" id="number-label">Age (optional)</label>
+          <input type="number" name="number" id="number" placeholder="Age" min="0"  max="100" />
+        </div>
+        <!--  Dropdown - Current Role -->
+        <div>
+          <label for="current-role"
+            >Which option best describes your current role?</label
+          >
+          <select name="current-role" id="dropdown">
+            <option value="select-option">Select an option</option>
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="prefer-not">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <!-- Radio Button - Recommendations -->
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <div class="radio">
+        <input
+          type="radio"
+          id="definitely"
+          name="recommendations"
+          value="definitely"
+        />
+        <label for="definitely">Definitely</label>
+        <input type="radio" id="maybe" name="recommendations" value="maybe" />
+        <label for="maybe">Maybe</label>
+        <input
+          type="radio"
+          id="not-sure"
+          name="recommendations"
+          value="not-sure"
+        />
+        <label for="not-sure">Not sure</label>
+    </div>
+        <!--  Dropdown - Fav Feature -->
+        <div>
+          <label for="fav-feature"
+            >What is your favorite feature of freeCodeCamp?</label
+          >
+          <select name="fave-feature" id="dropdown">
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open-source">Open Source</option>
+          </select>
+        </div>
+        <!-- Checkbox - Improvements -->
+        <div class="improvements-checkbox">
+          <p>What would you like to see improved? (Check all that apply)</p>
+          <input
+            type="checkbox"
+            name="improvements"
+            id="front-end"
+            value="Front-end Projects"
+          />
+          <label for="front-end">Front-End Projects</label>
+          <input
+            type="checkbox"
+            name="improvements"
+            id="back-end"
+            value="Back-end Projects"
+          />
+          <label for="back-end">Back-end Projects</label>
+          <input
+            type="checkbox"
+            name="improvements"
+            id="data-visulization"
+            value="data-visulization"
+          />
+          <label for="data-visulization">Data Visualization</label>
+          <input
+            type="checkbox"
+            name="improvements"
+            id="challenges"
+            value="challenges"
+          />
+          <label for="challenges">Challenges</label>
+          <input
+            type="checkbox"
+            name="improvements"
+            id="open-source"
+            value="open-source"
+          />
+          <label for="open-source">Open Source Community</label>
+          <input
+            type="checkbox"
+            name="improvements"
+            id="glitter-help"
+            value="glitter-help"
+          />
+          <label for="glitter-help">Glitter help rooms</label>
+          <input
+            type="checkbox"
+            name="improvements"
+            id="videos"
+            value="videos"
+          />
+          <label for="videos">Videos</label>
+          <label for="glitter-help">Glitter help rooms</label>
+          <input
+            type="checkbox"
+            name="improvements"
+            id="city-meetups"
+            value="city-meetups"
+          />
+          <label for="city-meetups">City Meetups</label>
+          <input
+            type="checkbox"
+            name="improvements"
+            id="wiki"
+            value="wiki"
+          />
+          <label for="wiki">Wiki</label>
+        </div>
+          <input
+            type="checkbox"
+            name="improvements"
+            id="forum"
+            value="forum"
+          />
+          <label for="forum">Forum</label>
+          <input type="checkbox" name="improvements"id="additional-courses" value="additional-courses"
+          />
+          <label for="additional-courses">Additional Courses</label>
+        </div>
+        <!--  Textarea - Comments/Suggestions -->
+        <div>
+            <p>Any comments or suggestions?</p>
+<textarea name="comments-suggestions" id="comments-suggestions" cols="10" rows="10" class="comments-suggestions">Enter your comments here...</textarea>
+        </div>
+        <button id="submit">Submit</button>
+      </form>
+
+    </section>
+  </body>
+  <footer><h6>Privacy.com Card Issuing API: Making payments easier and safer for everyone</h6></footer>
+</html>

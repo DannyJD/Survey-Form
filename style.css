@@ -1,0 +1,85 @@
+/* :root {
+    Color Profile
+    Button: #34ac64;
+    Main: #292947;
+    Font: #c3c3cb;
+} */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*  Media Query */
+
+/* Desktop */ /* Main Section */
+html {
+  min-height: 100%;
+  background: url(/survey-form-background.jpeg) rgba(108, 109, 167, 0.9);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #c3c3cb;
+}
+
+header {
+  margin: 20px;
+  color: #f4f4f4;
+  text-align: center;
+}
+
+#title {
+  font-size: 1.5rem;
+}
+#description {
+  font-size: 0.9rem;
+}
+
+/* Form Styling */
+
+form {
+  background-color: rgba(41, 41, 71, 0.9);
+  border-radius: 5px;
+  max-width: 50%;
+  margin: auto;
+  padding: 50px;
+  font-size: 0.8rem;
+}
+button {
+  background-color: #34ac64;
+  width: 100%;
+  color: #f4f4f4;
+  padding: 10px;
+  border: none;
+  margin-top: 25px;
+}
+
+label {
+  display: flex;
+  margin: 5px;
+}
+
+#name-label,
+#age-label,
+#email-label,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 3px;
+  border-radius: 5px;
+  color: #c3c3cb;
+}
+
+input[type="radio"] {
+  vertical-align: bottom;
+}
+
+footer {
+  text-align: center;
+}
